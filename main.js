@@ -6,10 +6,10 @@ function store(){
     var numbers = /[0-15]/g;
 
     if(name.value.length == 0){
-        alert('Please fill in email');
+        alert('Vänligen fyll i email');
 
     }else if(pw.value.length == 0){
-        alert('Please fill in password');
+        alert('Vänligen fyll i lösenord');
 
 
 
