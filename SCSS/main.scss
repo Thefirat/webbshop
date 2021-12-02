@@ -1,0 +1,16 @@
+@import "./variable.scss";
+
+.heart {
+  border: none;
+  color: $transpcolor;
+  width: 200px;
+  height: 200px; 
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.mystyle{
+
+    background-color: rgb(201, 104, 104);
+}
+

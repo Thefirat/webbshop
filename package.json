@@ -1,0 +1,23 @@
+{
+  "name": "julprojeckt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "node-sass SCSS/main.scss CSS/style.css -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Thefirat/julprojeckt.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Thefirat/julprojeckt/issues"
+  },
+  "homepage": "https://github.com/Thefirat/julprojeckt#readme",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
