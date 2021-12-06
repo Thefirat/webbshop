@@ -6,26 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inloggningsformulär</title>
     <script src="/main.js" defer></script>
-    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="./css/main.css">
+    
 </head>
 <body>
+
+    <div class="background" style="background-image: url(/pexels-cats-coming-707581.jpg);">
+
     
+    <div class="login">
+        <form name='form-login'>
+    <h1>REGISTRERA</h1>
 
-    <!-- 
-    Ett formulär 
-    <form id="login-form"> 
-    <input id="userName" type="text" placeholder="Enter Username" value=""/>
-    <input id="userPw" type="password" placeholder="Enter Password" value=""/>
-    <input id="login_btn" type="submit" value="Login" onClick="check()"/> 
-   </form>
- -->
+        <label for="name">Email</label>
+        <input type="email" id="name" placeholder="Email" required>
+
+        <label for="pw">Lösenord</label>
+        <input type="password"id= "pw" placeholder="Lösenord" required>
+
+        <input id="rgstr_btn" type="submit" value="Registrera" onclick="store()">
 
 
- <!-- Annat exempel -->
- <div class="login">
-    <form name='form-login'>
 
-        <h1>Test</h1>
+
+ 
 
         <h1>INLOGG ADMIN</h1>
 
@@ -38,7 +42,7 @@
         <div id="remember">
             <input type="checkbox" value="lsRememberMe" id="rememberMe"
             <label>Kom ihåg mig</label>
-        </div>
+        </div>  
 
         <input id= "login_btn" type="submit" value="Logga in" onclick="check()">
 

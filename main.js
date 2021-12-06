@@ -1,9 +1,10 @@
-//Storing
+//Skapa användare
 function store(){
 
     var name = document.getElementById('name');
     var pw = document.getElementById('pw');
-    var numbers = /[0-15]/g;
+   
+
 
     if(name.value.length == 0){
         alert('Vänligen fyll i email');
@@ -12,22 +13,17 @@ function store(){
         alert('Vänligen fyll i lösenord');
 
 
-
-    }else if(pw.value.length < 8){
-        alert('Min of 8');
-        
-
-    
     }else{
         localStorage.setItem('name', name.value);
         localStorage.setItem('pw', pw.value);
-        alert('Your account has been created');
+        alert('Ditt konto har skapats!');
     }
 }
 
 
+ 
 
-//Login
+//Logga in med sparade uppgifter/data
 function check(){
     var storedName = localStorage.getItem('name');
     var storedPw = localStorage.getItem('pw');
