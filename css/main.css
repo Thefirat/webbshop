@@ -55,7 +55,7 @@ p {
   height: 50px; }
 
 .login form input[type="submit"] {
-  background: #8a8b8b;
+  background: #20c4c4;
   border: 0;
   width: 100%;
   height: 40px;
@@ -67,6 +67,10 @@ p {
 #login form input[type="submit"]:hover {
   background: #0ae268; }
 
+#remember {
+  padding: 4px; }
+
 h1 {
   margin: 20px;
-  text-align: center; }
+  text-align: center;
+  font-size: 25px; }
