@@ -95,6 +95,7 @@ for (let i = 0; i < card.length; i++) {
     })
 }
 
+
 document.addEventListener("DOMContentLoaded", ()=> {
     let ui = new UI();
 
@@ -106,7 +107,26 @@ Totaltsumma.innerHTML
 
 
 
-function addToLocalStorage (e){
+
+
+var p1 = document.getElementById(produkt1);
+var p2 = document.getElementById(produkt2);
+var p3 = document.getElementById(produkt3);
+var p4 = document.getElementById(produkt4);
+var p5 = document.getElementById(produkt5);
+var p6 = document.getElementById(produkt6);
+var p7 = document.getElementById(produkt7);
+var p8= document.getElementById(produkt8);
+
+var räknaBtn = document.getElementById(btn);
+var totalt = document.getElementById(totalt1);
+
+räknaBtn.onclick=function()
+{
+    var toplam = Number(p1.value)+ (p2.value);
+}
+
+/* function addToLocalStorage (e){
     e.preventDefault();
     console.log(e)
 
@@ -121,3 +141,6 @@ document
 
 localStorage.setItem("./css/bilder/soffa2.png");
 const res = localStorage.getItem("./css/bilder/soffa2.png" )
+
+ */
+
