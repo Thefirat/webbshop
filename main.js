@@ -1,9 +1,11 @@
-const card = document.getElementsByClassName("card");
+const kort = document.getElementsByClassName("card");
 const btnAdd = document.getElementsByClassName("btn-info");
-const btnCart = document.querySelector(".btn-cart");
-const cartList = document.querySelector(".shopping-cart-list");
+const btnKort = document.querySelector(".btn-cart");
+const kortList = document.querySelector(".shopping-cart-list");
 
 
+//Constructor används för att initiera egenskaperna för objekten som ska härledas från klassen. 
+//Det vill säga konstruktörer initierar objekt.
 class Shopping{
     constructor(title,price,image){
         this.image = image;
@@ -12,15 +14,7 @@ class Shopping{
     }
 }
 
-/* 
 
-
-document.queryselector("")
-produktLista= [{ src:"./...", price:22, description: "dfafsd"}]
-
-sparas i localstorage 
-
-*/
 class UI{
 
     addToCart(shopping){
@@ -46,7 +40,7 @@ class UI{
             </div>
         </div>
         `
-        cartList.appendChild(listItem);
+        kortList.appendChild(listItem);
     }
 
     removeCart(){
@@ -62,25 +56,25 @@ class UI{
     }
 
     cartCount(){
-        let cartListItem = cartList.getElementsByClassName("list-item");
+        let cartListItem = kortList.getElementsByClassName("list-item");
         let itemCount = document.getElementById("item-count");
         itemCount.innerHTML = cartListItem.length;
     }
 
     cartToggle(){
-        btnCart.addEventListener("click", function(){
-            cartList.classList.toggle("d-none");
+        btnKort.addEventListener("click", function(){
+            kortList.classList.toggle("d-none");
         })
     }
     
 }
 
 
-for (let i = 0; i < card.length; i++) {
+for (let i = 0; i < kort.length; i++) {
     btnAdd[i].addEventListener("click", function(e){
-        let title = card[i].getElementsByClassName("card-title")[0].textContent;
-        let price = card[i].getElementsByClassName("price")[0].textContent;
-        let image = card[i].getElementsByClassName("card-img-top")[0].src;
+        let title = kort[i].getElementsByClassName("card-title")[0].textContent;
+        let price = kort[i].getElementsByClassName("price")[0].textContent;
+        let image = kort[i].getElementsByClassName("card-img-top")[0].src;
         btnAdd[i].classList.add("disabled");
         btnAdd[i].textContent = "Aktivierad";
         let shopping = new Shopping(title,price,image);
@@ -108,7 +102,7 @@ Totaltsumma.innerHTML
 
 
 
-
+/*
 var p1 = document.getElementById(produkt1);
 var p2 = document.getElementById(produkt2);
 var p3 = document.getElementById(produkt3);
@@ -123,9 +117,11 @@ var totalt = document.getElementById(totalt1);
 
 räknaBtn.onclick=function()
 {
-    var toplam = Number(p1.value)+ (p2.value);
+    var toplam = Number(p1.value)+ (p2.value)+ (p3.value)+ (p4.value)+ (p5.value)+ (p6.value)+ (p7.value)+ (p8.value);
 }
 
+
+*/
 /* function addToLocalStorage (e){
     e.preventDefault();
     console.log(e)
@@ -144,3 +140,14 @@ const res = localStorage.getItem("./css/bilder/soffa2.png" )
 
  */
 
+
+
+/* 
+
+
+document.queryselector("")
+produktLista= [{ src:"./...", price:22, description: "dfafsd"}]
+
+sparas i localstorage 
+
+*/
