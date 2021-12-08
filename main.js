@@ -76,7 +76,7 @@ for (let i = 0; i < kort.length; i++) {
         let price = kort[i].getElementsByClassName("price")[0].textContent;
         let image = kort[i].getElementsByClassName("card-img-top")[0].src;
         btnAdd[i].classList.add("disabled");
-        btnAdd[i].textContent = "Aktivierad";
+        btnAdd[i].textContent = "Vald";
         let shopping = new Shopping(title,price,image);
         let ui = new UI();
 
@@ -151,3 +151,19 @@ produktLista= [{ src:"./...", price:22, description: "dfafsd"}]
 sparas i localstorage 
 
 */
+
+
+
+/*
+function findTotal(){
+    var arr = document.getElementById('produkt');
+    var tot=0;
+    for(var i=0;i<arr.length;i++){
+        if(parseInt(arr[i].value))
+            tot += parseInt(arr[i].value);
+    }
+    document.getElementById('total-1').value = tot;
+}
+*/
+
+
