@@ -96,13 +96,29 @@ function check(){
         localStorage.setItem("productInfo", JSON.stringify( productInfo)); 
         const addToLocalStorage = localStorage.getItem("productInfo")  */
 
- const productOne = {
+
+
+       // 5. Denna lagrar produkten i localStorage
+function addImgFront () {
+
+}
+
+     const productOne = {
      namn: "Stol",
      beskrivning: "Stol i trä",
      pris: 400,
      src : "/productOne.jpg"
 
  }
- localStorage.setItem("src", JSON.stringify (productOne));
- const addToLocalStorage = localStorage.getItem("productOne");
- var product1 = JSON.parse(addToLocalStorage); 
+    localStorage.setItem("src", JSON.stringify (productOne));
+    const addToLocalStorage = localStorage.getItem("productOne");
+    var product1 = JSON.parse(addToLocalStorage); 
+
+
+    document
+    .querySelector("addProd")
+    .addEventListener("click", addImgFront)
+ 
+
+
+ 

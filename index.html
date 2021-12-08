@@ -12,8 +12,10 @@
 
 <body>
 
-    <!-- Bild för test i localStorage -->
-    <img src="/productOne.jpg" alt="">
+    <!-- Bild för test i localStorage. OBS den tar upp hela sidan atm -->
+    <img id="productOne" src="/productOne.jpg" alt="">
+
+
 <!-- Bakgrundsbild -->
     <div class="background" style="background-image: url(/pexels-cats-coming-707581.jpg);">
 
@@ -27,7 +29,6 @@
 
         <label for="pw">Lösenord</label>
         <input type="password"id= "pw" placeholder="Lösenord" required>
-
         <input id="rgstr_btn" type="submit" value="Registrera" onclick="store()">
 
 
