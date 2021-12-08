@@ -37,22 +37,72 @@ function check(){
     }
 }
 
-/* //Aktivera produkter från baksida till framsida
-function addToLocalStorage (e){
-e.preventDefault ();
 
-}
+//Produkter
 
-const addPicture = document.querySelector("class till bilder").value;
+/* 1. Varje produkt ska loggas i localStorage som array. Namn, pris, beskrivning. Bild?
+   2. Sen ska de laddas upp 
+   Finns bilderna i html? Använda länk till html-framsida? */
 
-document
-.querySelector(".addToLocalStorage")
-.querySelector(".knapp")
-.addEventListener("click", addToLocalStorage)
+/* 1. Prova detta
+  localStorage.setItem('name', name.value);
+  var storedName = localStorage.getItem('name');
+  const text = document.querySelector("#text").value;
+  Istället för name och text kanske man kan använda bild?
+  const textList = []; för en tom array kan användas för att lagra data
+  textList.push (text)
+
+ */
 
 
-localStorage.setItem("klass till bilder", klass till bilder)
+ /*  2. Prova detta
+  var myProducts = new Array();
+  myProducts[0] = "product";
+  myProducts[1] = "product1";
+  myProducts[2] = "product2";
 
-const res = localStorage.getItem("class till bilder");
+        localStorage["myProducts"] = JSON.stringify(myProducts);
+        var datas = JSON.parse(localStorage["myProducts"]);  */
 
-localStorage.setItem('addPicture', JSON.stringify(addPicture)); */
+
+
+
+        /* 3. Prova detta
+        //Skapa en array av produkter
+        var products = [
+            ["Stol"], ["Säng"], ["Badkar"]]
+            ;
+
+        //Spara arrayen som en string
+        JSON.stringify(products)
+
+        //Data sparas under key allProducts
+        localStorage.setItem("allProducts", JSON.stringify(products));
+
+        //Hämta data
+        var retrievedData = localStorage.getItem("allProducts");
+
+        //För att konvertera från string tillbaka till obejkt: parse
+        var products2 = JSON.parse(retrievedData); */
+
+
+       /*  4. Prova detta
+            const productInfo = { 
+            namn: "Stol", 
+            beskrivning: ["Stol i trä"],
+            pris: ["400kr"]
+        } 
+
+        localStorage.setItem("productInfo", JSON.stringify( productInfo)); 
+        const addToLocalStorage = localStorage.getItem("productInfo")  */
+
+ const productOne = {
+     namn: "Stol",
+     beskrivning: "Stol i trä",
+     pris: 400,
+     src : "/productOne.jpg"
+
+ }
+ localStorage.setItem("src", JSON.stringify (productOne));
+ const addToLocalStorage = localStorage.getItem("productOne");
+ var product1 = JSON.parse(addToLocalStorage); 
