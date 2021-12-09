@@ -1,6 +1,17 @@
 {
   "dependencies": {
     "node": "^17.2.0",
+    "node-sass": "^7.0.0",
     "sass": "^1.44.0"
-  }
+  },
+  "name": "jularbete2",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "node-sass sass/main.scss css/style.css -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }

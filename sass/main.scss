@@ -1,0 +1,291 @@
+li a {
+    padding: 5px;
+    background-color: rgb(8, 8, 8);
+    color: #fff ;
+    text-decoration: none;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+h3{
+    position: relative;
+    left: 160px;
+    top: -47px;
+    margin-bottom: 0;
+}
+
+
+h5{
+    font-size: 22px;
+    margin-top: 1px;
+    margin-left: 6px;
+}
+
+.Wish-rubrik {
+    text-align: center;
+}
+
+.Wish-text{
+    text-align: center;
+}
+
+span{
+    background-color: black;
+}
+
+.home{
+    position: relative;
+    left: 65px;
+    top: 17px;
+    font-size: 28px;
+    
+}
+.wish{
+    position: relative;
+    left: 990px;
+    top: -10px;
+   
+}
+
+.varukorg{
+    position: relative;
+    left: 1083px;
+    top: -43px;
+   
+}
+
+header{
+    background-image: url(./css/svart.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 1100px 70px;
+    width: 100%;
+    height: 100px;
+    color: white;
+    align-items: center;
+    margin-top: -16px;
+}
+
+ion-icon {
+    font-size: 28px;
+  }
+
+  .Kassa{
+      border-radius: 9%;
+      background-color: green;
+      border: none;
+      padding: 20px;
+      text-align: center;
+      position: relative;
+      left: 79%;
+
+  }
+
+
+.heade{
+    width: 80%;
+    height: 80px;
+    position: relative;
+    left: 120px;
+   
+}
+
+.cart-text{
+    position: relative;
+    left: 9px;
+}
+
+.Soffa{
+    border: 2px solid rgb(100, 99, 99);
+    border-radius: 5px;
+    padding: 2px ;
+    margin-right: 8px;
+    border-width: 1px;
+    
+}
+.Badkar{
+    border: 2px solid rgb(100, 99, 99);
+    border-radius: 5px;
+    padding: 2px ;
+    margin-right: 8px;
+    border-width: 1px;
+    
+}
+.Stege{
+    border: 2px solid rgb(100, 99, 99);
+    border-radius: 5px;
+    padding: 2px ;
+    margin-right: 8px;
+    border-width: 1px;
+    
+}
+.Spegel{
+    border: 2px solid rgb(100, 99, 99);
+    border-radius: 5px;
+    padding: 2px ;
+    border-width: 1px;
+    
+}
+.Vas{
+    border: 2px solid rgb(100, 99, 99);
+    border-radius: 5px;
+    padding: 2px ;
+    margin-right: 8px;
+    margin-top: 8px;
+    border-width: 1px;
+   
+}
+.Kruka{
+    border: 2px solid rgb(100, 99, 99);
+    border-radius: 5px;
+    padding: 2px ;
+    margin-right: 8px;
+    margin-top: 8px;
+    border-width: 1px;
+    
+}
+.Bokhylla{
+    border: 2px solid rgb(100, 99, 99);
+    border-radius: 5px;
+    padding: 2px ;
+    margin-right: 8px;
+    margin-top: 8px;
+    border-width: 1px;
+    
+}
+.Stol{
+    border: 2px solid rgb(100, 99, 99);
+    border-radius: 5px;
+    padding: 2px ;
+    margin-top: 8px;
+    border-width: 1px;
+    
+}
+
+
+.container{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    padding-bottom: 100px;
+}
+.produkt-sumering{
+    max-width: 650px;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.produkt-sumering ion-icon{
+    font-size: 25px;
+    color: blue;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.produkt-header{
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 4px solid lightgrey;
+    margin-top:  0;
+}
+
+.produkt-titel{
+    width: 45%;
+}
+
+
+.produkt-pris{
+    width: 15%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+.produkt-titel{
+    margin-bottom: -20px;
+}
+.produkt-antal{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    margin-bottom: -3px;
+
+}
+.produkt-total{
+    margin-bottom: -30px;
+
+}
+
+.close{
+    position: relative;
+    top: -60px;
+}
+
+.korgTotal{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 10px 0;
+    
+
+}
+
+
+.Pris{
+    width: 15%;
+    border-bottom:1px solid lightgrey;
+    display: flex;
+    align-items: center;
+    position:relative;
+    left: 290px;
+    top: -16px;
+}
+.antal{
+    width: 30%;
+    border-bottom:1px solid lightgrey;
+    display: flex;
+    align-items: center;
+    
+}
+.totalt{
+    width: 10%;
+    border-bottom:1px solid lightgrey;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    position: relative;
+    left: 580px;
+    top: -53px;
+
+}
+.change{
+    color: black;
+    background-color: white;
+}
+.antalartiklar{
+    color: black;
+    background-color: white;
+    position: relative;
+    left: 400px;
+    top: -35px;
+    border-bottom:1px solid lightgrey;
+
+
+}
+.totalSummaLista{ 
+    display: flex;
+    align-items: center;
+   
+    width: 50%;
+    padding: 10px 0;
+    position: relative;
+    left: 330px;
+}
