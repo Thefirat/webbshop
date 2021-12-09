@@ -1,10 +1,12 @@
-//Registrera och skapa admin
-function store(){
+/*JavaScript för formulär
+
+
+   //Registrera och skapa admin
+   function store(){
 
     var name = document.getElementById('name');
     var pw = document.getElementById('pw');
    
-
 
     if(name.value.length == 0){
         alert('Vänligen fyll i email');
@@ -22,6 +24,7 @@ function store(){
 
 
 //Logga in som registrerad admin
+
 function check(){
     var storedName = localStorage.getItem('name');
     var storedPw = localStorage.getItem('pw');
@@ -36,36 +39,34 @@ function check(){
         alert('Något gick fel!');
     }
 }
+*/
 
 
-//Produkter
 
-/* 1. Varje produkt ska loggas i localStorage som array. Namn, pris, beskrivning. Bild?
-   2. Sen ska de laddas upp 
-   Finns bilderna i html? Använda länk till html-framsida? */
-const list = []
-     function addImgFront () {
-// input value 
-     const productOne = {
-     namn: "Stol",
-     beskrivning: "Stol i trä",
-     pris: 400,
-     src : "/productOne.jpg"
+//JavaScript för produkter
 
- }
- list.push(productOne)
-    localStorage.setItem("src", JSON.stringify (list));
-    const addToLocalStorage = localStorage.getItem("productOne");
-    var product1 = JSON.parse(addToLocalStorage); 
+const productList = [];
+function addProduct(e) {
+e.preventDefault();
 
+const src= document.querySelector("#imgSrc").value;
+const productName= document.querySelector("#productName").value;
+const beskrivning = document.querySelector("#beskrivning").value;
+const kostnad = document.querySelector("#kostnad").value;
+
+
+let productObj= {
+productName:productName,
+img:src,
+bes:beskrivning,
+kos:kostnad,
+}
+
+productList.push(productObj);
+localStorage.setItem("productList", JSON.stringify(productList));
 
 }
-    
 
-    document
-    .querySelector("addProd")
-    .addEventListener("click", addImgFront)
- 
-
+document.querySelector("button").addEventListener("click" , addProduct);
 
  
