@@ -5,10 +5,14 @@ li a {
   text-decoration: none; }
 
 body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
   font-family: sans-serif; }
+
+.style-varukorg {
+  height: 3px;
+  width: 100%;
+  background-color: grey;
+  position: relative;
+  top: -30px; }
 
 h3 {
   position: relative;
@@ -47,7 +51,7 @@ span {
   top: -43px; }
 
 header {
-  background-image: url(./css/svart.jpg);
+  background-image: url(./svart.jpg);
   background-repeat: no-repeat;
   background-position: center top;
   background-size: 1100px 70px;
@@ -198,7 +202,6 @@ ion-icon {
 
 .Pris {
   width: 15%;
-  border-bottom: 1px solid lightgrey;
   display: flex;
   align-items: center;
   position: relative;
@@ -207,13 +210,12 @@ ion-icon {
 
 .antal {
   width: 30%;
-  border-bottom: 1px solid lightgrey;
+  margin: 40px;
   display: flex;
   align-items: center; }
 
 .totalt {
   width: 10%;
-  border-bottom: 1px solid lightgrey;
   display: flex;
   align-items: center;
   margin-bottom: 0;
