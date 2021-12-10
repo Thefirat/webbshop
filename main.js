@@ -1,4 +1,5 @@
-const kort = document.getElementsByClassName("card");
+//Variabler
+const kort = document.getElementsByClassName("card"); //
 const btnAdd = document.getElementsByClassName("btn-info");
 const btnKort = document.querySelector(".btn-cart");
 const kortList = document.querySelector(".shopping-cart-list");
@@ -39,7 +40,7 @@ class UI{
                 </button>
             </div>
         </div>
-        `
+        `       
         kortList.appendChild(listItem);
     }
 
@@ -76,7 +77,7 @@ for (let i = 0; i < kort.length; i++) {
         let price = kort[i].getElementsByClassName("price")[0].textContent;
         let image = kort[i].getElementsByClassName("card-img-top")[0].src;
         btnAdd[i].classList.add("disabled");
-        btnAdd[i].textContent = "Vald";
+        btnAdd[i].textContent = ("Vald");
         let shopping = new Shopping(title,price,image);
         let ui = new UI();
 
