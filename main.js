@@ -107,7 +107,6 @@ function setItems(produkter) {
 }
 
 function totalSumma(produkter) {
-   // console.log("produkt pris är", produkter.pris);
 
     let korgSumma = localStorage.getItem('totalSumma');
 
@@ -122,7 +121,17 @@ function totalSumma(produkter) {
 
     }
 
+
 }
+
+function removeProdukter(close) {
+    let storageProdukter = JSON.parse(localStorage.getItem('produkter'));
+    let produkter = storageProdukter.filter(produkter => produkter.produkterId !== produkterId );
+    localStorage.setItem('produkter', JSON.stringify(produkter));   
+}
+
+
+
 function displayCart() {
     let korgVaror =localStorage.getItem("produkterikorg");
     korgVaror = JSON.parse(korgVaror);

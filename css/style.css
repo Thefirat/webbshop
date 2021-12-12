@@ -42,12 +42,12 @@ span {
 
 .wish {
   position: relative;
-  left: 990px;
+  left: 960px;
   top: -10px; }
 
 .varukorg {
   position: relative;
-  left: 1083px;
+  left: 1053px;
   top: -43px; }
 
 header {
@@ -166,7 +166,7 @@ ion-icon {
   max-width: 650px;
   display: flex;
   justify-content: flex-start;
-  border-bottom: 4px solid lightgrey;
+  border-bottom: 3px solid grey;
   margin-top: 0; }
 
 .produkt-titel {
@@ -206,7 +206,7 @@ ion-icon {
   align-items: center;
   position: relative;
   left: 290px;
-  top: -16px; }
+  top: -76px; }
 
 .antal {
   width: 30%;
@@ -221,19 +221,21 @@ ion-icon {
   margin-bottom: 0;
   position: relative;
   left: 580px;
-  top: -53px; }
+  top: -113px; }
 
 .change {
   color: black;
-  background-color: white; }
+  background-color: white;
+  position: relative;
+  top: -59px;
+  left: 20px; }
 
 .antalartiklar {
   color: black;
   background-color: white;
   position: relative;
   left: 400px;
-  top: -35px;
-  border-bottom: 1px solid lightgrey; }
+  top: -95px; }
 
 .totalSummaLista {
   display: flex;
@@ -241,4 +243,6 @@ ion-icon {
   width: 50%;
   padding: 10px 0;
   position: relative;
-  left: 330px; }
+  left: 330px;
+  top: -36px;
+  border-bottom: 7px solid grey; }
