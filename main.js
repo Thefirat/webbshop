@@ -124,7 +124,7 @@ function totalSumma(produkter) {
 
 }
 
-function removeProdukter(close) {
+function removeProdukter() {
     let storageProdukter = JSON.parse(localStorage.getItem('produkter'));
     let produkter = storageProdukter.filter(produkter => produkter.produkterId !== produkterId );
     localStorage.setItem('produkter', JSON.stringify(produkter));   

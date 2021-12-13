@@ -1,3 +1,4 @@
+@charset "UTF-8";
 li a {
   padding: 5px;
   background-color: #080808;
@@ -16,7 +17,7 @@ body {
 
 h3 {
   position: relative;
-  left: 160px;
+  left: 140px;
   top: -47px;
   margin-bottom: 0; }
 
@@ -87,21 +88,21 @@ ion-icon {
   border: 2px solid #646363;
   border-radius: 5px;
   padding: 2px;
-  margin-right: 8px;
+  margin-right: 18px;
   border-width: 1px; }
 
 .Badkar {
   border: 2px solid #646363;
   border-radius: 5px;
   padding: 2px;
-  margin-right: 8px;
+  margin-right: 18px;
   border-width: 1px; }
 
 .Stege {
   border: 2px solid #646363;
   border-radius: 5px;
   padding: 2px;
-  margin-right: 8px;
+  margin-right: 18px;
   border-width: 1px; }
 
 .Spegel {
@@ -114,31 +115,31 @@ ion-icon {
   border: 2px solid #646363;
   border-radius: 5px;
   padding: 2px;
-  margin-right: 8px;
-  margin-top: 8px;
+  margin-right: 18px;
+  margin-top: 18px;
   border-width: 1px; }
 
 .Kruka {
   border: 2px solid #646363;
   border-radius: 5px;
   padding: 2px;
-  margin-right: 8px;
-  margin-top: 8px;
+  margin-right: 18px;
+  margin-top: 18px;
   border-width: 1px; }
 
 .Bokhylla {
   border: 2px solid #646363;
   border-radius: 5px;
   padding: 2px;
-  margin-right: 8px;
-  margin-top: 8px;
+  margin-right: 18px;
+  margin-top: 18px;
   border-width: 1px; }
 
 .Stol {
   border: 2px solid #646363;
   border-radius: 5px;
   padding: 2px;
-  margin-top: 8px;
+  margin-top: 18px;
   border-width: 1px; }
 
 .container {
@@ -245,4 +246,12 @@ ion-icon {
   position: relative;
   left: 330px;
   top: -36px;
-  border-bottom: 7px solid grey; }
+  border-bottom: 10px solid grey; }
+
+.lägg-till-wishlist {
+  position: relative;
+  left: 40px; }
+
+.lägg-till {
+  position: relative;
+  left: 20px; }
