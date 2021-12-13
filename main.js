@@ -45,7 +45,7 @@ function check(){
 
 //JavaScript för produkter
 
-const productList = [];
+const productList = JSON.parse( localStorage.getItem("productList")) || [];
 function addProduct(e) {
 e.preventDefault();
 
