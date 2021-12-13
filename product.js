@@ -35,12 +35,12 @@ products.map( (product)=> {
 
 document.querySelector(".product-container").innerHTML
 
-+= `<div class="ProdNamn"> name : ${product.productName} </div>
++= `<div class="ProdNamn"> Namn: ${product.productName} </div>
 
-<div class="beskrivningDiv"> beskrivning: ${product.bes}
+<div class="beskrivningDiv"> Beskrivning: ${product.bes}
 
 </div> <div class="prisDiv"> Pris: ${product.kos} </div>
 
-<img src=${product.img} alt="hej" >`
+<img src=${product.img} alt="produktbild" >`
 
 })

@@ -8,19 +8,27 @@ man in produkter som sedan displayas på framsidan (och product.html) -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adminsida</title>
+    <link rel="stylesheet" href="/css/main.css">
     <script src="/main.js" defer></script>
     <link rel="stylesheet" href="/product.html">
 
 </head>
 <body>
 
-    <h1>Du är nu inloggad på adminsidan</h1>
+    <div class="product">
+    <form name='form-product'>
+
+    <h1>Lägg upp produkter på hemsidan</h1>
     <input type="text" name="" id="imgSrc" placeholder="filnamn">
-    <input type="text" id="productName" placeholder="Titel">
+    <input type="text" id="productName" placeholder="titel">
     <input type="text" name="" id="beskrivning" placeholder="beskrivning">
     <input type="text" id="kostnad" placeholder="pris">
 
     <button class="addProd">Lägg till produkt</button>
+
+</form>
+
+</div>
     
 </body>
 </html>
