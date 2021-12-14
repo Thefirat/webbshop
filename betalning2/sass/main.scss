@@ -16,7 +16,7 @@ input[type=text], select {
     box-sizing: border-box;
   }
   
-  input[type=Nästa] {
+  .Nästa {
     width: auto;
     background-color: #4CAF50;
     color: white;
@@ -28,10 +28,10 @@ input[type=text], select {
     text-align: center;
     border-radius: 9%;
     position: relative;
-    left: 40%;
+    left: 30%;
   }
   
-  input[type=Nästa]:hover {
+  .Nästa:hover {
     background-color: #247228;
   }
   
@@ -51,6 +51,22 @@ input[type=text], select {
       width: 35%;
       position: relative;
       left: 30%;
+  }
+
+
+
+  .header-2{
+    background-color: gray;
+    height: 30%;
+    width: 35%;
+    position: relative;
+    left: 30%;
+  }
+
+  
+  .swish{
+    width: 20px;
+    height: 20px;
   }
 
   

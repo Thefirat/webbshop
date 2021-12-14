@@ -8,7 +8,7 @@ input[type=text], select {
   border-radius: 4px;
   box-sizing: border-box; }
 
-input[type=Nästa] {
+.Nästa {
   width: auto;
   background-color: #4CAF50;
   color: white;
@@ -20,9 +20,9 @@ input[type=Nästa] {
   text-align: center;
   border-radius: 9%;
   position: relative;
-  left: 40%; }
+  left: 30%; }
 
-input[type=Nästa]:hover {
+.Nästa:hover {
   background-color: #247228; }
 
 div {
@@ -39,3 +39,14 @@ div {
   width: 35%;
   position: relative;
   left: 30%; }
+
+.header-2 {
+  background-color: gray;
+  height: 30%;
+  width: 35%;
+  position: relative;
+  left: 30%; }
+
+.swish {
+  width: 20px;
+  height: 20px; }
