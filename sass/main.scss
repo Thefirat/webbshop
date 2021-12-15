@@ -1,16 +1,15 @@
 body {
   color: white;
-  margin: 0; 
 }
   
 
-.background {
- margin: auto;
- background-attachment: fixed;
- background-size: cover;
- background-size: 100% 100%;
- 
-}
+
+.background-admin { 
+  height: 100%;
+  margin: auto;
+  background-size: 100% 100%; 
+  
+ }
 
 p {
   line-height: 1.5em;
@@ -94,11 +93,6 @@ h1 {
 }
 
 
-.product-container img {
-     height: 300px;
-     width: 300px;
-     margin: 20px;
-}
 
 
 // Styling för produktformulär
@@ -155,8 +149,26 @@ input {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 // Styling för den temporära produktsidan där bilderna dyker upp
 .product-container {
   color: rgb(26, 25, 25);
   
+}
+
+.product-container img { 
+  height: 300px; 
+  width: 300px;
+  margin: 20px;
 }
