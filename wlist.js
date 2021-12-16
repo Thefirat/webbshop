@@ -5,31 +5,30 @@ git commit -m kommentar
 git push origin julprojeckt/wishlist
 */
 
-/* // list.push(artikelEtt); 
+// EVENT LISTENERS
+// För att hämta varan som finns i localStorage
+
+
+const wListproduct = JSON.parse(localStorage.getItem("wListproduct")) || [];
+
+function addProduct(e) {
+e.preventDefault();
+
+const wList = document.querySelectorAll("lägg-till-wishlist");
+const src = localStorage.getItem("src");
+const productName= localStorage.getItem("wListproduct");
+const beskrivning = localStorage.getItem("beskrivning");
+const kostnad = localStorage.getItem("kostnad");
+const products = JSON.parse(productName); 
+
   let productObj= {
   productName:productName,
   img:src,
   bes:beskrivning,
   kos:kostnad,
 } 
-*/ 
 
-// EVENT LISTENERS
-// För att hämta varan som finns i localStorage
-let wList = document.querySelector('.lägg-till-wishlist');
-const src = localStorage.getItem("src");
-const productName= localStorage.getItem("productList");
-const beskrivning = localStorage.getItem("beskrivning");
-const kostnad = localStorage.getItem("kostnad");
-const produktNamn = localStorage.getItem("namn");
-const produktTag = localStorage.getItem("tag");
-const pris = localStorage.getItem("pris");
-const products = JSON.parse(produktNamn); 
-
-
-
-// Lägger till "värden" på produkterna + produkter som skapats med localStorage
- let produkters = [
+ let productObject = [
   {
       namn: 'Soffa',
       tag:'Soffa',
@@ -76,38 +75,58 @@ const products = JSON.parse(produktNamn);
       pris: 699,
       iKorg: 0
   },
-    {
-     productName:productName,
-     img:src,
-     bes:beskrivning,
-     kos:kostnad,
-  }, 
- 
-]
- 
+] 
 
-function displayCart() {
-  let korgVaror =localStorage.getItem("produkterikorg");
-  korgVaror = JSON.parse(korgVaror);
-  let produktSamling = document.querySelector(".produkt")
+ wListproduct.push(productObj);
+localStorage.setItem("wListproduct", JSON.stringify(wListproduct)); 
 
-  console.log(korgVaror);
-  if( korgVaror && produktSamling ) {
-  produktSamling.innerHTML = '';
-  Object.values(korgVaror).map(item => {
-      produktSamling.innerHTML += `
-      <div class="produkter">
+ wListproduct.push(productObject);
+localStorage.setItem("wListproduct", JSON.stringify(wListproduct));
+
+
+
+products.map( (product)=> {
+
+    document.querySelector(".wListproduct-container").innerHTML 
+    += `<div class="ProdNamn"> name : ${product.productName} </span> 
+     <span class="beskrivningDiv">  beskrivning: ${product.bes} </span> 
+     <span class="prisDiv"> Pris: ${product.kos} </span> 
+     <img src=${product.img} alt="produkt">
+     </div>
+    `
+
+})
+products.map( (product)=> {
+document.querySelector(".wListproduct-container").innerHTML 
+    += `<div class="produkter">
       <div class="style-varukorg"></div>
       <ion-icon class="close" name="close-circle"></ion-icon>
-      <img src="./Bilder/${item.tag}.jpg" width="90px">
-      <span class="change">${item.namn}</span>  
+      <img src="./Bilder/${product.tag}.jpg" width="90px">
+      <span class="change">${product.namn}</span>  
       </div>
-      <div class="Pris">${item.pris} Kr</div>
+      <div class="Pris">${product.pris} Kr</div>
+      <div class="Antal"><span class="antalartiklar">${product.iKorg}</span>
       </div>
-      `;
-      
-  });
-}
+      `
+})
 }
 
-displayCart();
+document.querySelector(".lägg-till-wishlist").addEventListener("click" , addProduct);
+
+addProduct(); 
+
+
+// en empty array 
+// ett object
+
+// läs in id, name, besrkivning , price , bild länk 
+// lägg detta i objektet 
+
+
+// push objectet i array
+// push arrayen till localstorage 
+
+
+// wlist knapp - skapar nya localstorage - klart 
+// queryselector de namnen
+// 
