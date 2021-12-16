@@ -1,9 +1,6 @@
-/*JavaScript för formulär
-
-
    //Registrera och skapa admin
-   function store(){
 
+function store(){
     var name = document.getElementById('name');
     var pw = document.getElementById('pw');
    
@@ -39,8 +36,6 @@ function check(){
         alert('Något gick fel!');
     }
 }
-*/
-
 
 
 //JavaScript för produkter
@@ -69,4 +64,3 @@ localStorage.setItem("productList", JSON.stringify(productList));
 
 document.querySelector("button").addEventListener("click" , addProduct);
 
- 

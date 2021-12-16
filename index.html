@@ -11,24 +11,24 @@ När man klickar på "Logga in"-knappen slussas du till admin.html
     <title>Inloggningsformulär</title>
     <script src="/main.js" defer></script>
     <link rel="stylesheet" href="./css/main.css">
-    
-</head>
+    </head>
+
+
 
 <body>
-
 <!-- Bakgrundsbild -->
-<div class="background" style="background-image: url(/productOne.jpg);">
+    <div class="background" style="background-image: url(/productOne.jpg);">
 
     <!-- Formulär för att registrera sig som admin -->
     <div class="login">
     <form name='form-login'>
 
 
+
     <h1>REGISTRERA DIG</h1>
 
     <label for="name"></label>
     <input type="email" id="name" placeholder="Email" required>
-
     <label for="pw"></label>
     <input type="password"id= "pw" placeholder="Lösenord" required>
     <input id="rgstr_btn" type="submit" value="Registrera" onclick="store()">
@@ -51,12 +51,10 @@ När man klickar på "Logga in"-knappen slussas du till admin.html
         </div>  
 
         <input id= "login_btn" type="submit" value="Logga in" onclick="window.location.href='admin.html'">
-        <!-- Man kan byta till om man vill gå godkännandemeddelande
-         att man loggat in: onclick=check() -->
+        
 
-    </form>
 
+</form>
 </div>
-
 </body>
 </html>
