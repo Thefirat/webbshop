@@ -3,6 +3,7 @@ const kort = document.getElementsByClassName("card"); //
 const btnAdd = document.getElementsByClassName("btn-info");
 const btnKort = document.querySelector(".btn-cart");
 const kortList = document.querySelector(".shopping-cart-list");
+const Knapp = document.querySelector(".knapp");
 
 
 //Constructor används för att initiera egenskaperna för objekten som ska härledas från klassen. 
@@ -89,6 +90,26 @@ for (let i = 0; i < kort.length; i++) {
         e.preventDefault();
     })
 }
+
+for (let i = 0; i < kort.length; i++) {
+    Knapp[i].addEventListener("click", function(e){
+        let title = kort[i].getElementsByClassName("card-title")[0].textContent;
+        let price = kort[i].getElementsByClassName("price")[0].textContent;
+        let image = kort[i].getElementsByClassName("card-img-top")[0].src;
+        Knapp[i].classList.add("disabled");
+        Knapp[i].textContent = ("Vald");
+        let shopping = new Shopping(title,price,image);
+        let ui = new UI();
+
+        ui.addToCart(shopping);
+        ui.removeCart()
+        ui.cartCount();
+
+
+        e.preventDefault();
+    })
+}
+
 
 
 document.addEventListener("DOMContentLoaded", ()=> {
