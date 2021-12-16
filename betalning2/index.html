@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./main.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+
+</head>
+
+<body>
+
+
+    <div class="header-1">
+        <h3 class="info">Information:</h3>
+        <form action="/action_page.php" class="form1">
+            <label for="fname">Namn *</label>
+            <input type="text" id="fname" placeholder="Namn..">
+
+            <label for="lname">Efternamn *</label>
+            <input type="text" id="lname" placeholder="Efternamn..">
+
+            <label for="lname">E-post *</label>
+            <input type="text" id="epost" placeholder="E-post..">
+
+            <label for="adress">Telefon</label>
+            <input type="text" id="number" placeholder="Nummer..">
+
+            <label for="pnummer">Personnumer *</label>
+            <input type="text" id="pnummer" placeholder="Personnumer..">
+
+            <label for="adress"> Leverans Adress *</label>
+            <input type="text" id="adress" placeholder="Adress..">
+
+            <label for="land">Land</label>
+            <select id="land" name="Land">
+                <option value="sverige">Sverige</option>
+                <option value="danmark">Danmark</option>
+                <option value="norge">Norge</option>
+            </select>
+
+
+        </form>
+   
+
+
+    <br>
+
+    <h3 class="info">Betalningsalternativ</h3>
+        <input type="checkbox" name="Kort" id="Kort">
+        <label for="Kort">Kort</label> <i class="fas fa-credit-card"></i>
+        
+        <br>
+        <br>
+        <input type="tel" name="Kort" id="kort-1" placeholder="Visa/MasterCard Nummer">
+        <br>
+        <form action="">
+            <input placeholder="Namn Efternamn" type="tel" name="nummer">
+            <br>
+            <input placeholder="MM/ÅÅ" type="tel" name="expiry">
+            <input placeholder="CVC" type="number" name="cvc">
+        </form>
+
+        <br>
+        <br>
+        <br>
+        <input type="checkbox" name="Swish" id="Swish">
+        <label for="Swish">Swish</label> <i class="fa fa-swish"><img class="swish" src="./css/bilder/swish.ico" alt=""></i>
+        <input type="text" name="Swish" id="swish" placeholder="Nummer">
+
+        <span>
+            <input type="checkbox" id="checkbox" name="checkbox">
+            <label for="adress">Skicka till fakturaadressen</label>
+            
+        </span>
+        <br>
+        <br>
+
+    <button onclick="myFunction1()" class="Nästa" onclick = "window.location.href='sista.html">Slutför</button>
+    
+
+</div>
+
+</body>
+
+</html>
