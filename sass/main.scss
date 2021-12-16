@@ -1,15 +1,15 @@
-body {
-  color: white;
-}
-  
-
-
-.background-admin { 
+body  {
+  color: rgb(250, 246, 246);
+  height: 100%; 
+  margin: 0;
+  background-image: url("/productOne.jpg");
   height: 100%;
   margin: auto;
-  background-size: 100% 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} 
   
- }
 
 p {
   line-height: 1.5em;
@@ -28,16 +28,16 @@ p {
   padding: 10px 22px 22px 22px;
   width: 100%;
   border-radius: 5px;
-  background: #414b53;
-  border-top: 10px solid #434a52;
-  border-bottom: 3px solid #434a52;
+  background: #212224;
+  border-top: 10px solid #121213;
+  border-bottom: 3px solid #0c0c0c;
   opacity: 90%;
 }
 
 .login form span {
-  background-color: #363b41;
+  background-color: #cfdae7;
   border-radius: 3px 0px 0px 3px;
-  border-right: 3px solid #434a52;
+  border-right: 3px solid #feffff;
   color: #606468;
   display: block;
   float: left;
@@ -90,6 +90,7 @@ h1 {
   margin: 20px;
   text-align: center;
   font-size: 19px;
+  color: white;
 }
 
 
@@ -108,10 +109,10 @@ input {
 
 
 .product form input {
-  background-color: #3b4148;
+  background-color: #212224;
   border-radius: 0px 3px 3px 0px;
-  color: #a9a9a9;
-  margin-bottom: 1em;
+  color: #212224;
+  margin-bottom: 40px;
   padding: 0 16px;
   width: 90%;
   height: 50px; 
@@ -141,7 +142,7 @@ input {
   width: 100%;
   border-radius: 5px;
   background: #414b53;
-  border-top: 10px solid #434a52;
+  border-top: 10px solid #212224;
   border-bottom: 3px solid #434a52;
   opacity: 90%;
 }
