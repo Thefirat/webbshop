@@ -1,8 +1,105 @@
+<<<<<<< HEAD:Varukorgen/sass/main.scss
 
 
 
 
 /*{
+=======
+body  {
+  color: rgb(250, 246, 246);
+  height: 100%; 
+  margin: 0;
+  background-image: url("/productOne.jpg");
+  height: 100%;
+  margin: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} 
+  
+
+p {
+  line-height: 1.5em;
+}
+
+
+// Styling för inloggningsformulär
+
+.login { 
+  margin: 10px auto;
+  width: 320px;
+}
+
+.login form {
+  margin: auto;
+  padding: 10px 22px 22px 22px;
+  width: 100%;
+  border-radius: 5px;
+  background: #212224;
+  border-top: 10px solid #121213;
+  border-bottom: 3px solid #0c0c0c;
+  opacity: 90%;
+}
+
+.login form span {
+  background-color: #cfdae7;
+  border-radius: 3px 0px 0px 3px;
+  border-right: 3px solid #feffff;
+  color: #606468;
+  display: block;
+  float: left;
+  line-height: 50px;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+}
+
+.login form input[type="email"] {
+  background-color: #3b4148;
+  border-radius: 0px 3px 3px 0px;
+  color: #a9a9a9;
+  margin-bottom: 1em;
+  padding: 0 16px;
+  width: 90%;
+  height: 50px;
+}
+
+.login form input[type="password"] {
+  background-color: #3b4148;
+  border-radius: 0px 3px 3px 0px;
+  color: #a9a9a9;
+  margin-bottom: 1em;
+  padding: 0 16px;
+  width: 90%;
+  height: 50px;
+}
+
+.login form input[type="submit"] {
+  background: #0bec6948;
+  border: 0;
+  width: 100%;
+  height: 40px;
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+#login form input[type="submit"]:hover {
+  background: #0ae268;
+}
+
+#remember {
+  padding: 4px;
+}
+
+
+h1 {
+  margin: 20px;
+  text-align: center;
+  font-size: 19px;
+  color: white;
+*{
+>>>>>>> 17d820e5fcb1d8a4629cdfc132404d3c3c4e068d:sass/main.scss
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -23,3 +120,82 @@
 //
 
 
+
+// Styling för produktformulär
+
+.product { 
+  margin: 10px auto;
+  width: 320px;
+}
+
+input {
+  justify-content: center;
+}
+
+
+.product form input {
+  background-color: #212224;
+  border-radius: 0px 3px 3px 0px;
+  color: #212224;
+  margin-bottom: 40px;
+  padding: 0 16px;
+  width: 90%;
+  height: 50px; 
+}
+
+
+.addProd {
+  background: #0bec6977;
+  border: 0;
+  width: 100%;
+  height: 40px;
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+
+.login { 
+  margin: 10px auto;
+  width: 320px;
+}
+
+.product form {
+  margin: auto;
+  padding: 10px 22px 22px 22px;
+  width: 100%;
+  border-radius: 5px;
+  background: #414b53;
+  border-top: 10px solid #212224;
+  border-bottom: 3px solid #434a52;
+  opacity: 90%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Styling för den temporära produktsidan där bilderna dyker upp
+.product-container {
+  color: rgb(26, 25, 25);
+  
+}
+
+.product-container img { 
+  height: 300px; 
+  width: 300px;
+  margin: 20px;
+}
+}
