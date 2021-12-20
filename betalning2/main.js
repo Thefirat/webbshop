@@ -31,7 +31,7 @@ function myFunction1() {
     prompt("fyll i Levaransadressen");
   } else {
     console.log("tack")
-    
+    window.location.href='./sista.html'
   }
   
 }
