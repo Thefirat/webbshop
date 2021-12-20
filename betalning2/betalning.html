@@ -6,17 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <script src="./main.js" defer></script>
+    <link rel="stylesheet" href="./css/betalning.css">
+    <script src="./betalningjava.js" defer></script>
+    <!---Font Awesome används för ikoner -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
 
 </head>
 
 <body>
-
-
+                     <!--Information-->
+   <!-- 
+    Input:Denna tagg används för att skapa olika gränssnittskomponenter i en form. Input kan användas för att skapa olika komponenter.  
+    Label:Egenskapen for för <label>-taggen och id-egenskaperna för <input>-taggen synkroniseras. 
+    Option:Taggen definierar ett alternativ i urvalslistan.
+     Br:Taggen används för extra mellanrum.
+     --> 
     <div class="header-1">
         <h3 class="info">Information:</h3>
+        <p class="fält">* Indikerar fält som måste fyllas i.</p>
         <form action="/action_page.php" class="form1">
             <label for="fname">Namn *</label>
             <input type="text" id="fname" placeholder="Namn..">
@@ -50,6 +57,8 @@
 
     <br>
 
+                                      <!--Betalning-->
+
     <h3 class="info">Betalningsalternativ</h3>
         <input type="checkbox" name="Kort" id="Kort">
         <label for="Kort">Kort</label> <i class="fas fa-credit-card"></i>
@@ -80,7 +89,7 @@
         <br>
         <br>
 
-    <button onclick="myFunction1()" class="Nästa" onclick = "window.location.href='sista.html">Slutför</button>
+    <button onclick="myFunction1()" class="Nästa">Slutför</button>
     
 
 </div>

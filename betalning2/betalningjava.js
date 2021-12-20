@@ -1,10 +1,12 @@
-
+//skapade function 
+// 
 function myFunction1() {
   let inputName = document.querySelector("#fname");
   let inputEfternamen = document.querySelector("#lname");
   let inputPost = document.querySelector("#epost");
   let inputPersonnummer = document.querySelector("#pnummer");
   let inputLadress = document.querySelector("#adress");
+  
   if (inputName.value == "") {
     prompt("fyll i namn");
   } else {
@@ -31,10 +33,15 @@ function myFunction1() {
     prompt("fyll i Levaransadressen");
   } else {
     console.log("tack")
+    window.location.href='./sista.html'
     
   }
-  
+
+   
 }
+
+
+
 
 
 

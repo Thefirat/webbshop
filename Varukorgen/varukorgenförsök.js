@@ -1,3 +1,7 @@
+
+/*
+
+
 //Variabler
 const kort = document.getElementsByClassName("card"); //
 const btnAdd = document.getElementsByClassName("btn-info");
@@ -78,7 +82,7 @@ for (let i = 0; i < kort.length; i++) {
         let price = kort[i].getElementsByClassName("price")[0].textContent;
         let image = kort[i].getElementsByClassName("card-img-top")[0].src;
         btnAdd[i].classList.add("disabled");
-        btnAdd[i].textContent = ("Vald");
+        btnAdd[i].textContent = ("vald");
         let shopping = new Shopping(title,price,image);
         let ui = new UI();
 
@@ -188,4 +192,6 @@ function findTotal(){
 }
 */
 
+
+*/
 
