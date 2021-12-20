@@ -1,4 +1,8 @@
+// knapp "lägg till i cart" ser till så att produkten kommer till varukorg //
 let korg = document.querySelectorAll('.lägg-till')
+// knapp "lägg till i cart" ser till så att produkten kommer till varukorg //
+
+// uppger alla produkter och även bilder med pris //
 
 let produkter = [
     {
@@ -48,6 +52,9 @@ let produkter = [
         iKorg: 0
     },
 ]
+// uppger alla produkter och även bilder med pris //
+
+// kör en loop så att när man trycker på knappen så ska det synas i varukorg numret och total summan //
 
 for (let i=0; i < korg.length; i++){
     korg[i].addEventListener('click', () => {
@@ -55,7 +62,10 @@ for (let i=0; i < korg.length; i++){
         totalSumma(produkter[i])
     })
 }
+// kör en loop så att när man trycker på knappen så ska det synas i varukorg numret och total summan //
 
+
+// När sidan uppdateras så ska det finnas kvar och därav sparas det i localstorage //
 function onloadkorgNummer() {
     let produktNummer = localStorage.getItem('korgNummer');
 
@@ -64,6 +74,7 @@ function onloadkorgNummer() {
         
     }
 }
+// När sidan uppdateras så ska det finnas kvar och därav sparas det i localstorage //
 
 function korgNummer(produkter){
     let produktNummer = localStorage.getItem('korgNummer');
@@ -84,6 +95,7 @@ function korgNummer(produkter){
 function setItems(produkter) {
     let korgVaror = localStorage.getItem('produkterikorg');
     korgVaror = JSON.parse(korgVaror);
+// När sidan uppdateras så ska det finnas kvar och därav sparas det i localstorage //
 
     if(korgVaror != null) { 
         if(korgVaror[produkter.tag] == undefined){
@@ -142,6 +154,7 @@ function removeProdukter() {
 */
 
 
+// allt som visas i varukorgen och även att de lagras i localstorage //
 
 function displayCart() {
     let korgVaror =localStorage.getItem("produkterikorg");
@@ -182,6 +195,7 @@ function displayCart() {
     `
   }
 }
+// allt som visas i varukorgen och även att de lagras i localstorage //
 
 
 onloadkorgNummer();
