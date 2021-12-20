@@ -6,65 +6,48 @@ git push origin julprojeckt/wishlist
 */
 
 // EVENT LISTENERS
-// För att hämta varan som finns i localStorage
-
-
 
 
 // läsa in data från wishlist och loopa igenom och visa i wishlist sida
 
 // En tom array för wishlist
-const wListproduct = JSON.parse(localStorage.getItem(".card-title")) || [];
+const wListproduct = JSON.parse(localStorage.getItem(".wListproduct")) || [];
 
 function addProduct(e) {
 e.preventDefault();
 
-// var titel = document.querySelectorAll(".card-title").forEach
-var priset = document.querySelector(".card-price").innerHTML;
-
-//var bilden = document.querySelector("card-pic").innerHTML; 
-//console.log(bilden);
-// console.log(titel);
-console.log(priset);
 
 
-// läsa in med inneHTML
-//  från innerHTML till localStorage
-// vart ska localstorage.setItem 
 
-const src = localStorage.getItem(".card-pic");
-const productName= localStorage.getItem(".card-title");
-const kostnad = localStorage.getItem(".card-price");
-
-const products = JSON.parse(productName) || []; 
-
+// Läser in data från produkters individuella HTML-fil
+var priset = document.querySelectorAll(".card-price");
+const src = document.querySelectorAll(".card-pic")
+const productName= document.querySelectorAll(".card-title");
+const id = e.target.getAttribute("id");
 
   let productObj= {
-  product:productName,
-  bild:src,
-  kostnad:kostnad,
+  product:productName[id].innerHTML,
+  bild:src[id].getAttribute("src"),
+  kostnad:priset[id].innerHTML,
 } 
 
+ // Pushar in produkten i wListproduct-localStorage
  wListproduct.push(productObj);
-
-localStorage.setItem("wListproduct", JSON.stringify(wListproduct)); 
+ localStorage.setItem("wListproduct", JSON.stringify(wListproduct)); 
 
 // Skriver ut produkten i wishlist.html genom att skapa nya div-taggar
-products.map( (product)=> {
-
-  const x = document.querySelector(".wListproduct-container");
-    document.querySelector(".wListproduct-container").innerHTML 
+ wListproduct.map( (product)=> {
+  document.querySelector(".wListproduct-container").innerHTML
     += `
      <div> 
      <h5 class="card-title"> name : ${product.product} </h5> 
-     <img class="card-pic" src="./bilder/${product.bild}" alt="${product.product}>
+     <img class="card-pic" src="./bilder/${product.bild}" alt="${product.product}">
      <h3 class="card-price"> Pris: ${product.kostnad} SEK </h3> 
      </div>
     `
    
-})
+}) 
 }
-
 
 // wList-knappen, för att den ska koppla till alla knappar lägger man till .forEach.  
  document
@@ -72,11 +55,10 @@ products.map( (product)=> {
 .forEach( btn => btn.addEventListener("click" , addProduct));  
 
 
-
 // en empty array 
 // ett object
 
-// läs in id, name, besrkivning , price , bild länk 
+// läs in id, name, price , bild länk 
 // lägg detta i objektet 
 
 
@@ -85,5 +67,4 @@ products.map( (product)=> {
 
 
 // wlist knapp - skapar nya localstorage - klart 
-// queryselector de namnen
-// 
+
