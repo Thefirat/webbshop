@@ -5,7 +5,7 @@ body {
   background-image: url("/productOne.jpg");
   height: 100%;
   margin: auto;
-  background-position: center;
+  background-position: center;  
   background-repeat: no-repeat;
   background-size: cover; }
 
@@ -83,12 +83,13 @@ h1 {
   width: 320px; }
 
 input {
-  justify-content: center; }
+  justify-content: center; 
+}
 
 .product form input {
   background-color: #212224;
   border-radius: 0px 3px 3px 0px;
-  color: #212224;
+  color: #fdfdfd;
   margin-bottom: 40px;
   padding: 0 16px;
   width: 90%;
@@ -116,7 +117,8 @@ input {
   background: #414b53;
   border-top: 10px solid #212224;
   border-bottom: 3px solid #434a52;
-  opacity: 90%; }
+  opacity: 90%; 
+}
 
 .product-container {
   color: #1a1919; }

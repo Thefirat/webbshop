@@ -6,8 +6,8 @@ body  {
   margin: auto;
     
 } 
-  
-
+    
+ 
 p {
   line-height: 1.5em;
 }
@@ -65,7 +65,7 @@ p {
 }
 
 .login form input[type="submit"] {
-  background: #0bec6948;
+  background: #ec0bc648;
   border: 0;
   width: 100%;
   height: 40px;
@@ -157,7 +157,7 @@ input {
   padding: 10px 22px 22px 22px;
   width: 100%;
   border-radius: 5px;
-  background: #414b53;
+  background: #f0f1f3;
   color: white;
   border-top: 10px solid #212224;
   border-bottom: 3px solid #434a52;
@@ -183,4 +183,14 @@ input {
   width: 300px;
   margin: 20px;
 }
+}
+
+
+.styleContainer {
+  border: 2px solid #646363;
+  border-radius: 5px;
+  padding: 2px;
+  margin-right: 8px;
+  margin-top: 8px;
+  border-width: 1px; 
 }

@@ -183,10 +183,10 @@
     "yargs-parser": "^20.2.9"
   },
   "scripts": {
-    "start": "node-sass sass/main.scss css/main.css -w",
+    "start": "node-sass sass/veronica.main.scss css/main.css -w",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
+  "repository": { 
     "type": "git",
     "url": "git+https://github.com/Thefirat/julprojeckt.git"
   },

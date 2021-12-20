@@ -11,11 +11,15 @@ products.map( (product)=> {
 
 document.querySelector(".product-container").innerHTML
 
-+= `<div class="ProdNamn"> Namn: ${product.productName} </div>
++= `
+<div class= "styleContainer">
+<h5 class="ProdNamn"> Namn: ${product.productName} </h5>
 
-<div class="beskrivningDiv"> Beskrivning: ${product.bes} </div> 
+<p class="beskrivningDiv"> Beskrivning: ${product.bes} </p> 
 
-<div class="prisDiv"> Pris: ${product.kos} </div>
+<h3 class="prisDiv"> Pris: ${product.kos} </h3>
 
-<img class="picContainer"> src=${product.img} alt="${product.productName}" id="9" >`
+<img class="picContainer"> src=${product.img} alt="${product.productName}" id="9" >
+</div>
+`
 })
