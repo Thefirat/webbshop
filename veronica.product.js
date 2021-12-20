@@ -9,7 +9,7 @@ const products = JSON.parse(productName);
 
 products.map( (product)=> {
 
-document.querySelector(".product-container").innerHTML
+document.querySelector(".productWrap").innerHTML
 
 += `
 <div class= "styleContainer">

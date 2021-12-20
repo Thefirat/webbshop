@@ -1,4 +1,28 @@
 {
+
+  "name": "julprojeckt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "node-sass SCSS/main.scss CSS/style.css -w",
+
+  "dependencies": {
+    "node": "^17.2.0",
+    "node-sass": "^7.0.0",
+    "sass": "^1.44.0"
+  },
+  "name": "jularbete2",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "node-sass sass/main.scss css/style.css -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+
   "name": "gruppinlamning",
   "version": "1.0.0",
   "description": "",
@@ -182,18 +206,32 @@
     "yargs": "^13.3.2",
     "yargs-parser": "^20.2.9"
   },
+
   "scripts": {
+
     "start": "node-sass sass/veronica.main.scss css/main.css -w",
+
+    "start": "node-sass sass/main.scss css/main.css -w",
+
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+
   "repository": { 
     "type": "git",
     "url": "git+https://github.com/Thefirat/julprojeckt.git"
   },
+
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Thefirat/julprojeckt/issues"
+  "url": "https://github.com/Thefirat/julprojeckt/issues"
   },
+
+  "homepage": "https://github.com/Thefirat/julprojeckt#readme",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  },
+
   "homepage": "https://github.com/Thefirat/julprojeckt#readme"
-}
+
+}}
