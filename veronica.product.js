@@ -1,3 +1,4 @@
+//Samlade variabler
 const src = localStorage.getItem("src");
 const productName= localStorage.getItem("productList");
 const beskrivning = localStorage.getItem("beskrivning");
@@ -12,10 +13,9 @@ document.querySelector(".product-container").innerHTML
 
 += `<div class="ProdNamn"> Namn: ${product.productName} </div>
 
-<div class="beskrivningDiv"> Beskrivning: ${product.bes}
+<div class="beskrivningDiv"> Beskrivning: ${product.bes} </div> 
 
-</div> <div class="prisDiv"> Pris: ${product.kos} </div>
+<div class="prisDiv"> Pris: ${product.kos} </div>
 
-<img src=${product.img} alt="produktbild" >`
-
+<img class="picContainer"> src=${product.img} alt="${product.productName}" id="9" >`
 })

@@ -16,6 +16,7 @@ function store(){
         localStorage.setItem('name', name.value);
         localStorage.setItem('pw', pw.value);
         alert('Ditt konto har skapats!');
+
     }
 }
 
@@ -63,6 +64,8 @@ localStorage.setItem("productList", JSON.stringify(productList));
 }
 
 document.querySelector("button").addEventListener("click" , addProduct);
+
+
 //Variabler
 const kort = document.getElementsByClassName("card"); //
 const btnAdd = document.getElementsByClassName("btn-info");
