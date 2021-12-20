@@ -22,6 +22,7 @@ function store(){
         localStorage.setItem('name', name.value);
         localStorage.setItem('pw', pw.value);
         alert('Ditt konto har skapats!');
+
     }
 }
 
@@ -69,7 +70,12 @@ localStorage.setItem("productList", JSON.stringify(productList));
 }
 
 document.querySelector("button").addEventListener("click" , addProduct);
+<<<<<<< HEAD:Varukorgen/varukorgenförsök.js
 >>>>>>> 17d820e5fcb1d8a4629cdfc132404d3c3c4e068d:main.js
+=======
+
+
+>>>>>>> 46361e32472887b892bce8c5055c31b73cee6768:firat.veronica.main.js
 //Variabler
 const kort = document.getElementsByClassName("card"); //
 const btnAdd = document.getElementsByClassName("btn-info");
