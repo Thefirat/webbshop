@@ -142,7 +142,7 @@ ion-icon {
   margin-top: 18px;
   border-width: 1px; }
 
-.container {
+.product-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -157,7 +157,7 @@ ion-icon {
 
 .produkt-sumering ion-icon {
   font-size: 25px;
-  color: blue;
+  color: red;
   margin-left: 10px;
   margin-right: 10px;
   cursor: pointer; }

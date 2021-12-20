@@ -124,11 +124,22 @@ function totalSumma(produkter) {
 
 }
 
+/*
 function removeProdukter() {
-    let storageProdukter = JSON.parse(localStorage.getItem('produkter'));
-    let produkter = storageProdukter.filter(produkter => produkter.produkterId !== produkterId );
-    localStorage.setItem('produkter', JSON.stringify(produkter));   
+    var removeBtn = document.getElementsByClassName('.close');
+    console.log(removeBtn)
+
+
+    console.log("clicked ")
+    for (let i=0; i > removeBtn.length; i++){
+        removeBtn[i].addEventListener('click', () => {
+            korgNummer(produkter[i]);
+            totalSumma(produkter[i]);
+        })
+    }
 }
+
+*/
 
 
 
@@ -145,7 +156,7 @@ function displayCart() {
         produktSamling.innerHTML += `
         <div class="produkter">
         <div class="style-varukorg"></div>
-        <ion-icon class="close" name="close-circle"></ion-icon>
+        <ion-icon class="close" name="close-circle" ></ion-icon>
         <img src="./Bilder/${item.tag}.jpg" width="90px">
         <span class="change">${item.namn}</span>  
         </div>
@@ -167,9 +178,11 @@ function displayCart() {
     <h4 class="korgTotal">
     ${korgSumma},00 kr
     </h4>
+    </div>
     `
   }
 }
+
 
 onloadkorgNummer();
 displayCart();
