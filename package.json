@@ -1,0 +1,20 @@
+{
+  "name": "jularbete2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "firat.veronica.main.js",
+  "scripts": {
+    "start": "",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Thefirat/julprojeckt.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Thefirat/julprojeckt/issues"
+  },
+  "homepage": "https://github.com/Thefirat/julprojeckt#readme"
+}
