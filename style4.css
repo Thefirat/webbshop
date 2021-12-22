@@ -6,7 +6,8 @@ li a {
   text-decoration: none; }
  
 body {
-  font-family: sans-serif; }
+  font-family: sans-serif;
+}
 
 .style-varukorg {
   height: 3px;
@@ -19,7 +20,8 @@ h3 {
   position: relative;
   left: 140px;
   top: -47px;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+ }
 
 h5 {
   font-size: 22px;

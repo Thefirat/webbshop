@@ -12,8 +12,6 @@ function addProduct(e) {
 e.preventDefault();
 
 
-
-
 // Läser in data från produkters individuella HTML-fil
 var priset = document.querySelectorAll(".card-price");
 const src = document.querySelectorAll(".card-pic")

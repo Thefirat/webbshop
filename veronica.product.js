@@ -19,7 +19,7 @@ document.querySelector(".productWrap").innerHTML
 
 <h3 class="prisDiv"> Pris: ${product.kos} </h3>
 
-<img class="picContainer" src=${product.img} width="90px" alt="${product.productName}" id="9" >
+<img class="picContainer" src=${product.img} width="250px" alt="${product.productName}" id="9" >
 </div>
 `
 })
