@@ -6,7 +6,7 @@ git push origin julprojeckt/wishlist
 */
 
 // En tom array för wishlist
-const wListproduct = JSON.parse(localStorage.getItem(".wListproduct")) || [];
+const wListproduct = JSON.parse(localStorage.getItem("wListproduct")) || [];
 
 function addProduct(e) {
 e.preventDefault();
@@ -27,7 +27,7 @@ let visaWish = localStorage.getItem("wListproduct");
   bild:src[id].getAttribute("src"),
   kostnad:priset[id].innerHTML,
 } 
-
+console.log(wListproduct)
  // Pushar in produkten i wListproduct-localStorage
  wListproduct.push(productObj);
  localStorage.setItem("wListproduct", JSON.stringify(wListproduct)); 

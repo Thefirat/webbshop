@@ -1,0 +1,59 @@
+/* Firats  */
+
+@charset "UTF-8";
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid white;
+  border-radius: 4px;
+  box-sizing: border-box; }
+
+.Nästa {
+  width: auto;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 9%;
+  position: relative;
+  left: 40%; }
+
+.Nästa:hover {
+  background-color: #247228; }
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px; }
+
+.info {
+  text-align: center; }
+
+.header-1 {
+  background-color: gray;
+  height: 30%;
+  width: 35%;
+  position: relative;
+  left: 30%; }
+
+.header-2 {
+  background-color: gray;
+  height: 30%;
+  width: 35%;
+  position: relative;
+  left: 30%; }
+
+.swish {
+  width: 20px;
+  height: 20px; }
+
+
+  .fält{
+    text-align: center;
+    color: red;}
