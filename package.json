@@ -1,20 +1,24 @@
 {
-  "name": "jularbete2",
+  "name": "gruppinlamning",
   "version": "1.0.0",
   "description": "",
-  "main": "firat.veronica.main.js",
+  "main": "main.js",
   "scripts": {
-    "start": "",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node-sass main.scss main.css main4.scss style4.css main1.scss style.css -w "
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Thefirat/julprojeckt.git"
   },
+  "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "ISC", 
   "bugs": {
     "url": "https://github.com/Thefirat/julprojeckt/issues"
   },
-  "homepage": "https://github.com/Thefirat/julprojeckt#readme"
+  "homepage": "https://github.com/Thefirat/julprojeckt#readme",
+  "dependencies": {
+    "sass": "^1.45.1"
+  }
 }
