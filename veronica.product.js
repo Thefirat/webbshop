@@ -17,5 +17,5 @@ document.querySelector(".product-container").innerHTML
 
 <div class="prisDiv"> Pris: ${product.kos} </div>
 
-<img class="picContainer"> src=${product.img} alt="${product.productName}" id="9" >`
+<img class="picContainer"> src=${product.img} alt="${product.productName}" id="9"  >`
 })
