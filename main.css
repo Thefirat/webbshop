@@ -78,7 +78,7 @@ h1 {
   margin: 20px;
   text-align: center;
   font-size: 19px;
-  color: white; }
+ }
 
 .product {
   margin: 10px auto;
@@ -123,11 +123,15 @@ input {
 }
 
 .product-container {
-  color: #1a1919; }
+  color: #030303b0; 
+}
 
 .productWrap img {
-  border: 2px solid #646363;
   border-radius: 5px;
   padding: 2px;
   margin-right: 18px;
-  border-width: 1px; }
+  border-width: 1px; 
+}
+
+
+
