@@ -1,0 +1,25 @@
+{
+  "name": "gruppinlamning",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node-sass Style/main.scss Style/main.css Style/main4.scss Style/style4.css Style/main1.scss Style/style.css -w "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Thefirat/julprojeckt.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Thefirat/julprojeckt/issues"
+  },
+  "homepage": "https://github.com/Thefirat/julprojeckt#readme",
+  "dependencies": {
+    "node-sass": "^7.0.0",
+    "sass": "^1.45.1"
+  },
+  "description": ""
+}
