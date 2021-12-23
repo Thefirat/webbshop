@@ -1,4 +1,4 @@
-.v  {
+.v {
   color: rgb(250, 246, 246);
   height: 100%; 
   margin: 0;
@@ -88,11 +88,6 @@ h1 {
 
 }
 
-
-
-
-
-
 .product { 
   margin: 10px auto;
   width: 320px;
@@ -150,6 +145,7 @@ input {
 
 
 
+
 .product-container {
   color: rgb(26, 25, 25);
   
@@ -160,7 +156,6 @@ input {
   width: 300px;
   margin: 20px;
 }
-
 
 
 .styleContainer {
