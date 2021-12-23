@@ -5,7 +5,7 @@
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node-sass main.scss main.css main4.scss style4.css main1.scss style.css -w "
+    "start": "sass main.scss main.css main4.scss style4.css main1.scss style.css -w "
   },
   "repository": {
     "type": "git",

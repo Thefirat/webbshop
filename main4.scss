@@ -310,3 +310,12 @@ ion-icon {
     position: relative;
     left: 20px;
 }
+
+.wListproduct-container {
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    padding-bottom: 100px;
+
+}

@@ -4,7 +4,7 @@ const wListproduct = JSON.parse(localStorage.getItem("wListproduct")) || [];
 // functionen att klicka på knappen
 function addProduct(e) {
 e.preventDefault();
-
+console.log("hej");
 // Läser in data från produkters individuella HTML-fil
 var priset = document.querySelectorAll(".card-price");
 const src = document.querySelectorAll(".card-pic");
@@ -17,7 +17,7 @@ product:productName[id].innerHTML,
 bild:src[id].getAttribute("src"),
 kostnad:priset[id].innerHTML,
 } 
-console.log(wListproduct)
+
  // Pushar in produkten i wListproduct-localStorage
  wListproduct.push(productObj);
  localStorage.setItem("wListproduct", JSON.stringify(wListproduct)); 
@@ -29,3 +29,4 @@ console.log(wListproduct)
 .forEach( btn => btn.addEventListener("click" , addProduct));  
 
 
+console.log(document.querySelectorAll(".lägg-till-wishlist"))

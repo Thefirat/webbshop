@@ -1,7 +1,7 @@
 // Gör en ny div-tag där sätter in produkten läggs in på html-filen
-const wListproduct = JSON.parse(localStorage.getItem("wListproduct") ) || [];
+const wListproducts = JSON.parse(localStorage.getItem("wListproduct") ) || [];
     
-wListproduct.map( (product)=> {
+wListproducts.map( (product)=> {
    
     document.querySelector(".wListproduct-container").innerHTML
      += `
