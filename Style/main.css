@@ -1,6 +1,6 @@
 /* Veronicas CSS */
 
-body {
+.ve {
   color: #faf6f6;
   height: 100%;
   margin: 0;
@@ -9,7 +9,8 @@ body {
   margin: auto;
   background-position: center;  
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover; 
+}
 
 p {
   line-height: 1.5em; }
