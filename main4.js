@@ -173,11 +173,11 @@ function displayCart() {
         <img src="./Bilder/${item.tag}.jpg" width="90px">
         <span class="change">${item.namn}</span>  
         </div>
-        <div class="Pris">${item.pris} Kr</div>
+        <div class="Pris">${item.pris} kr</div>
         <div class="Antal"><span class="antalartiklar">${item.iKorg}</span>
         </div>
         <div class="totalt">
-        ${item.iKorg * item.pris},00kr
+        ${item.iKorg * item.pris}kr
         </div>
         `;
         
@@ -186,10 +186,10 @@ function displayCart() {
     <div class="style-varukorg"></div>
     <div class="totalSummaLista">
     <h4 class=""totalTitel>
-    Korg       Total 
+    Totalsumma
     </h4>
     <h4 class="korgTotal">
-    ${korgSumma},00 kr
+    ${korgSumma}kr
     </h4>
     </div>
     `
