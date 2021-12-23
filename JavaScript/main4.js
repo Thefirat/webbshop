@@ -170,7 +170,7 @@ function displayCart() {
         <div class="produkter">
         <div class="style-varukorg"></div>
         <ion-icon class="close" name="close-circle" ></ion-icon>
-        <img src="./Bilder/${item.tag}.jpg" width="90px">
+        <img src="/Bilder/${item.tag}.jpg" width="90px">
         <span class="change">${item.namn}</span>  
         </div>
         <div class="Pris">${item.pris} kr</div>
