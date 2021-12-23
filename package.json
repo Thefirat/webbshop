@@ -4,7 +4,11 @@
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+<<<<<<< HEAD
     "start": "node-sass Style/main.scss Style/main.css Style/main4.scss Style/style4.css Style/main1.scss Style/style.css -w "
+=======
+    "start": "sass sass/main1.scss Style/main.css -w "
+>>>>>>> 4c585763e3d1a787c2bd53df00132da45e894302
   },
   "repository": {
     "type": "git",
