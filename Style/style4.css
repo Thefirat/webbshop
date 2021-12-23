@@ -275,13 +275,13 @@ h5.ProdNamn,  p.beskrivningDiv {
   justify-content: center;
   left: 20px; 
   margin: 1px;
-  padding: 2px;
+  padding: 2px;  
   margin-right: 58px;
   border-width: 1px;
 }
 
 h3.prisDiv {
-margin-left: -10px;
+margin-left: -10px; 
 color: rgba(18, 19, 18, 0.719);
 }
  
