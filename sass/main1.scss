@@ -2,7 +2,7 @@
 
 
 
-input[type=text], select {
+.i1, select {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -31,22 +31,19 @@ input[type=text], select {
     background-color: #247228;
   }
   
-  {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-  }
-
   .info{
       text-align: center;
   }
 
-  .header-1{
-      background-color: gray;
-      height: 30%;
-      width: 35%;
-      position: relative;
-      left: 30%;
+  .header-1 {
+    background-color: gray;
+    height: 30%;
+    width: 35%;
+    position: relative;
+    left: 30%; 
+    border-radius: 5px;
+    background-color: #918181;
+    padding: 20px; 
   }
 
 
@@ -71,5 +68,22 @@ input[type=text], select {
     color: red;
     
   }
+
+  .bild-1{
+    position: relative;
+    left: 37%
+}
+
+.text-1{
+    position: relative;
+    left: 40%;
+    color: green;
+}
+
+.text-2{
+    position: relative;
+    left: 36%;
+    color: olivedrab;
+}
   
   
