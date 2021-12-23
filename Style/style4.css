@@ -6,7 +6,8 @@ li a {
   text-decoration: none; }
  
 body {
-  font-family: sans-serif; }
+  font-family: sans-serif;
+}
 
 .style-varukorg {
   height: 3px;
@@ -19,12 +20,15 @@ h3 {
   position: relative;
   left: 140px;
   top: -47px;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+ }
 
-h5 {
+h5  {
   font-size: 22px;
   margin-top: 1px;
-  margin-left: 6px; }
+  margin-left: 6px; 
+}
+  
 
 .Wish-rubrik {
   text-align: center; }
@@ -66,9 +70,10 @@ ion-icon {
   font-size: 28px; }
 
 .Kassa {
-  border-radius: 9%;
-  background-color: green;
+  border-radius: 33px;
+  background-color: rgba(0, 128, 0, 0.692);
   border: none;
+  color: white;
   padding: 20px;
   text-align: center;
   position: relative;
@@ -81,63 +86,62 @@ ion-icon {
   left: 120px; }
 
 .cart-text {
-  position: relative;
-  left: 9px; }
+  display: flex;
+justify-content: center;
+  left: 20px; 
+  margin: 10px;
+}
+
+.card-title {
+  display: flex;
+justify-content: center;
+  margin: 10px;
+}
 
 .Soffa {
-  border: 2px solid #646363;
-  border-radius: 5px;
   padding: 2px;
   margin-right: 18px;
-  border-width: 1px; }
+  border-width: 1px;
+  border-radius: 5px;
+ }
 
 .Badkar  {
-  border: 2px solid #646363;
-  border-radius: 5px;
   padding: 2px;
   margin-right: 18px;
-  border-width: 1px; }
+  border-width: 1px;
+  border-radius: 5px;
+ }
 
 .Stege {
-  border: 2px solid #646363;
-  border-radius: 5px;
   padding: 2px;
   margin-right: 18px;
-  border-width: 1px; }
+  border-width: 1px;
+  border-radius: 5px;
+ }
 
 .Spegel {
-  border: 2px solid #646363;
-  border-radius: 5px;
   padding: 2px;
   border-width: 1px; }
 
 .Vas {
-  border: 2px solid #646363;
-  border-radius: 5px;
   padding: 2px;
   margin-right: 18px;
   margin-top: 18px;
   border-width: 1px; }
 
 .Kruka {
-  border: 2px solid #646363;
-  border-radius: 5px;
   padding: 2px;
   margin-right: 18px;
   margin-top: 18px;
   border-width: 1px; }
 
 .Bokhylla {
-  border: 2px solid #646363;
-  border-radius: 5px;
   padding: 2px;
   margin-right: 18px;
   margin-top: 18px;
   border-width: 1px; }
 
 .Stol {
-  border: 2px solid #646363;
-  border-radius: 5px;
   padding: 2px;
   margin-top: 18px;
   border-width: 1px; }
@@ -256,3 +260,28 @@ ion-icon {
   position: relative;
   left: 20px; }
 
+.productWrap{
+  display: flex;
+  align-content: center;
+  padding: 2px;
+  margin-top: 20px;
+  margin-left: 70px;
+  border-width: 1px; 
+}
+
+h5.ProdNamn,  p.beskrivningDiv {
+  color: rgba(3, 3, 3, 0.692);
+  display: flex;
+  justify-content: center;
+  left: 20px; 
+  margin: 1px;
+  padding: 2px;  
+  margin-right: 58px;
+  border-width: 1px;
+}
+
+h3.prisDiv {
+margin-left: -10px; 
+color: rgba(18, 19, 18, 0.719);
+}
+ 

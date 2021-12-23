@@ -10,6 +10,7 @@ input[type=text], select {
   border-radius: 4px;
   box-sizing: border-box; }
 
+
 .Nästa {
   width: auto;
   background-color: #4CAF50;
@@ -33,7 +34,8 @@ div {
   padding: 20px; }
 
 .info {
-  text-align: center; }
+  text-align: center;
+ }
 
 .header-1 {
   background-color: gray;
@@ -51,9 +53,13 @@ div {
 
 .swish {
   width: 20px;
-  height: 20px; }
+  height: 20px;
+  border-radius: 10px; }
 
 
   .fält{
     text-align: center;
-    color: red;}
+    color: rgba(5, 5, 5, 0.459);
+    font-size: 15px;
+  }
+  

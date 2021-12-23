@@ -37,7 +37,7 @@ function myFunction1() {
     prompt("fyll i Levaransadressen");
   } else {
     
-    window.location.href='./sista.html'
+    window.location.href= '../HTML/sista.html'
     
   }
   

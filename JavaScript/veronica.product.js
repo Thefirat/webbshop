@@ -13,13 +13,17 @@ document.querySelector(".productWrap").innerHTML
 
 += `
 <div class= "styleContainer">
-<h5 class="ProdNamn"> Namn: ${product.productName} </h5>
+<img class="card-pic" src=${product.img} width="250px" alt="${product.productName}" id="9" >
 
-<p class="beskrivningDiv"> Beskrivning: ${product.bes} </p> 
+<h5 class="ProdNamn">  ${product.productName} </h5>
 
-<h3 class="prisDiv"> Pris: ${product.kos} </h3>
+<p class="card-title">  ${product.bes} </p> 
+<br>
+<a class="lägg-till cart8" href="#"><ion-icon name="basket"></ion-icon></a>
+<a class="lägg-till-wishlist heart8" href="#"><ion-icon name="heart" id="7"></ion-icon></a>
 
-<img class="picContainer" src=${product.img} width="90px" alt="${product.productName}" id="9" >
+<h3 class="card-price"> ${product.kos}kr </h3>
+
 </div>
 `
 })
