@@ -4,7 +4,7 @@ const wListproduct = JSON.parse(localStorage.getItem("wListproduct")) || [];
 // functionen att klicka på knappen
 function addProduct(e) {
 e.preventDefault();
-console.log("hej");
+
 // Läser in data från produkters individuella HTML-fil
 var priset = document.querySelectorAll(".card-price");
 const src = document.querySelectorAll(".card-pic");
@@ -27,6 +27,3 @@ kostnad:priset[id].innerHTML,
  document
 .querySelectorAll(".lägg-till-wishlist")
 .forEach( btn => btn.addEventListener("click" , addProduct));  
-
-
-console.log(document.querySelectorAll(".lägg-till-wishlist"))
