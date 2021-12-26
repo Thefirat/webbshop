@@ -17,7 +17,7 @@ product:productName[id].innerHTML,
 bild:src[id].getAttribute("src"),
 kostnad:priset[id].innerHTML,
 } 
-console.log(wListproduct)
+
  // Pushar in produkten i wListproduct-localStorage
  wListproduct.push(productObj);
  localStorage.setItem("wListproduct", JSON.stringify(wListproduct)); 
@@ -27,5 +27,3 @@ console.log(wListproduct)
  document
 .querySelectorAll(".lägg-till-wishlist")
 .forEach( btn => btn.addEventListener("click" , addProduct));  
-
-
