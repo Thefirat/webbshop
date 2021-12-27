@@ -56,10 +56,15 @@
     left: 30%;
   }
 
+  .faturaadress{
+      background-color: grey;
+  }
+
   
   .swish{
     width: 20px;
     height: 20px;
+    border-radius: 30%;
   }
 
   
@@ -89,7 +94,6 @@
   //Veronicas
   // Veronicas SCSS
 body  {
-  color: rgb(250, 246, 246);
   height: 100%; 
   margin: 0;
   height: 100%;
@@ -176,6 +180,7 @@ h1 {
   text-align: center;
   font-size: 19px;
   color: white;
+  
 
 
 // Styling för produktformulär
@@ -241,6 +246,8 @@ input {
   height: 300px; 
   width: 300px;
   margin: 20px;
+  
+
 }
 
 
@@ -248,12 +255,15 @@ input {
   border: 2px solid #646363;
   border-radius: 5px;
   padding: 2px;
-  margin-right: 8px;
+  margin-left: 500px;
   margin-top: 8px;
-  border-width: 1px; 
+  border-width: 1px;
+  position: relative; 
+  left: 50%;
 }
 
-} 
+
+}
 /*  Julias css för wishlist-sidan */
 
 .Wish-rubrik {
@@ -1590,7 +1600,6 @@ input {
                 .totalSummaLista{ 
                     display: flex;
                     align-items: center;
-                   
                     width: 50%;
                     padding: 10px 0;
                     position: relative;
@@ -1667,14 +1676,14 @@ input {
                     }
                     .wish{
                         position: relative;
-                        left: 760px;
+                        left: 920px;
                         top: -10px;
                        
                     }
                     
                     .varukorg{
                         position: relative;
-                        left: 953px;
+                        left: 1053px;
                         top: -43px;
                        
                     }

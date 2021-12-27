@@ -51,9 +51,14 @@
   left: 30%;
 }
 
+.faturaadress {
+  background-color: grey;
+}
+
 .swish {
   width: 20px;
   height: 20px;
+  border-radius: 30%;
 }
 
 .fält {
@@ -79,7 +84,6 @@
 }
 
 body {
-  color: #faf6f6;
   height: 100%;
   margin: 0;
   height: 100%;
@@ -217,9 +221,11 @@ h1 .styleContainer {
   border: 2px solid #646363;
   border-radius: 5px;
   padding: 2px;
-  margin-right: 8px;
+  margin-left: 500px;
   margin-top: 8px;
   border-width: 1px;
+  position: relative;
+  left: 50%;
 }
 
 /*  Julias css för wishlist-sidan */
@@ -1570,13 +1576,13 @@ h1 .styleContainer {
 
   .wish {
     position: relative;
-    left: 760px;
+    left: 920px;
     top: -10px;
   }
 
   .varukorg {
     position: relative;
-    left: 953px;
+    left: 1053px;
     top: -43px;
   }
 
