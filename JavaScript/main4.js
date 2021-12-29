@@ -122,8 +122,7 @@ function totalSumma(produkter) {
 
     let korgSumma = localStorage.getItem('totalSumma');
 
-    console.log("min korgsumma är", korgSumma);
-    console.log(typeof korgSumma );
+   
 
     if(korgSumma != null) {
         korgSumma = parseInt(korgSumma);
@@ -162,7 +161,6 @@ function displayCart() {
     let produktSamling = document.querySelector(".produkt")
     let korgSumma = localStorage.getItem('totalSumma');
 
-    console.log(korgVaror);
     if( korgVaror && produktSamling ) {
     produktSamling.innerHTML = '';
     Object.values(korgVaror).map(item => {
